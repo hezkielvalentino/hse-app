@@ -1,4 +1,6 @@
 streamlit
 ultralytics
 opencv-python-headless
+pydrive
+twilio
 Pillow
