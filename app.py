@@ -22,6 +22,7 @@ client = Client(TWILIO_SID, TWILIO_AUTH_TOKEN)
 # --- Inisialisasi Google Drive ---
 try:
     gauth = GoogleAuth()
+    gauth.LoadClientConfigFile("client_secrets.json")
     gauth.LocalWebserverAuth()
     drive = GoogleDrive(gauth)
     folder_id = '1q2J3b_Er31OAQE0N74b9Q6fQ29-D6cnI'
