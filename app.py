@@ -1,6 +1,6 @@
-# ✅ Versi Real-time Web App dengan Streamlit, mirip PyQt5 asli Anda
-
 import streamlit as st
+st.set_page_config(layout="wide")
+
 import cv2
 import numpy as np
 from ultralytics import YOLO
@@ -35,7 +35,6 @@ class_names = {0: "helmet", 1: "no_helmet"}
 last_capture_time = 0
 cooldown = 60
 
-st.set_page_config(layout="wide")
 st.title("🚧 Deteksi Helm Real-time Web")
 
 # --- Kamera ---
